@@ -22,7 +22,7 @@ end.parse!
 #p ARGV
 
 vim = RbVmomi::VIM.connect ssl: true, insecure: true, host: '%%dns_vcenter%%', user: '%%user%%', password: '%%password%%'
-dc = vim.serviceInstance.find_datacenter("ADUNEO Datacenter") or fail "datacenter not found"
+dc = vim.serviceInstance.find_datacenter("%%my_datacenter%%") or fail "datacenter not found"
 rootFolder = vim.serviceInstance.content.rootFolder
 #vm=vim.serviceInstance.find_datacenter.find_vm("Glendale") or abort ("VM Not Found!")
 #puts vm
