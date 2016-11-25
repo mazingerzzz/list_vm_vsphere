@@ -1,2 +1,2 @@
 # list_vm_vsphere
-Liste l'ip d'une vm sur vphere
+find vm ip on vsphere
